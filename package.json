@@ -27,7 +27,7 @@
     "generate": "yarn plop --plopfile generators/plopfile.js",
     "start": "react-scripts start",
     "storybook": "start-storybook -p 6006 -s public",
-    "test": "react-scripts test",
+    "test": "jest",
     "test:watch": "yarn test --watch"
   },
   "lint-staged": {

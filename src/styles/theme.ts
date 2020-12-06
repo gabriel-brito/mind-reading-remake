@@ -23,8 +23,10 @@ export default {
     },
   },
   colors: {
+    cyberYellow: '#FFD300',
     mainBg: '#283655',
     white: '#FAFAFA',
+    lightGrey: '#F3F3F3',
   },
   spacings: {
     xxsmall: '0.8rem',
