@@ -1,4 +1,3 @@
-
 import { ThemeProvider } from 'styled-components'
 
 import GlobalStyles from 'styles/global'
