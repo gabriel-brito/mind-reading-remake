@@ -19,12 +19,12 @@ export const Wrapper = styled.div`
 
 export const Loader = styled.div`
   ${({ theme }) => css`
-    border: 8px solid ${theme.colors.lightGrey};
-    border-right: 8px solid ${theme.colors.cyberYellow};
+    animation: spin 1s linear infinite;
     border-radius: 100%;
+    border-right: 8px solid ${theme.colors.cyberYellow};
+    border: 8px solid ${theme.colors.lightGrey};
     height: 60px;
     width: 60px;
-    animation: spin 1s linear infinite;
 
     @keyframes spin {
       0% {
