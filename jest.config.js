@@ -1,9 +1,17 @@
 module.exports = {
-  collectCoverage: true,
-  collectCoverageFrom: ['src/**/*.ts(x)?', '!src/**/stories.tsx'],
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
-  modulePaths: ['./src/'],
-  setupFilesAfterEnv: ['./src/setupTests.ts'],
   testEnvironment: 'jsdom',
-  testPathIgnorePatterns: ['/node_modules/']
+  testPathIgnorePatterns: ['/node_modules/'],
+  collectCoverage: true,
+  collectCoverageFrom: [
+    'src/**/*.ts(x)?',
+    '!src/**/stories.tsx',
+    '!src/pages/**/*.tsx',
+    '!src/styles/**/*.ts'
+  ],
+  setupFilesAfterEnv: ['<rootDir>/.jest/setup.ts'],
+  modulePaths: ['<rootDir>/src/', '<rootDir>/.jest'],
+  moduleNameMapper: {
+    '^styled-components':
+      '<rootDir>/node_modules/styled-components/dist/styled-components.browser.cjs.js'
+  }
 }
